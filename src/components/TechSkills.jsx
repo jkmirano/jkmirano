@@ -50,29 +50,31 @@ const TechSkills = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20 px-5 max-w-7xl m-auto">
-      <h2 className="font-bold text-3xl text-cyan-900 mb-12">
-        Tech &amp; Skills
-      </h2>
-      <p className="font-normal text-xl text-cyan-900 mb-14">
-        A collection of the tools, technologies, and frameworks I use to build
-        modern, scalable web applications. From front-end development with
-        React, Angular and JavaScript to back-end solutions with Node.js and
-        databases, I’m passionate about crafting full-stack solutions that
-        deliver performance and innovation.
-      </p>
+    <div className="bg-teal-100">
+      <div className="py-24 px-5 max-w-7xl m-auto">
+        <h2 className="font-bold text-3xl text-cyan-900 mb-12">
+          Tech &amp; Skills
+        </h2>
+        <p className="font-normal text-xl text-cyan-900 mb-14">
+          A collection of the tools, technologies, and frameworks I use to build
+          modern, scalable web applications. From front-end development with
+          React, Angular and JavaScript to back-end solutions with Node.js and
+          databases, I’m passionate about crafting full-stack solutions that
+          deliver performance and innovation.
+        </p>
 
-      <ul className="flex flex-wrap items-center justify-center max-w-screen-lg m-auto">
-        {techSkills.map((ts, i) => (
-          <li
-            className="flex items-center font-bold text-xl m-4 text-gray-500 hover:scale-110 transition-transform"
-            key={`tech-skill-${i}`}
-          >
-            {ts.icon ? ts.icon : ""}
-            <span className="ml-2">{ts.name}</span>
-          </li>
-        ))}
-      </ul>
+        <ul className="flex flex-wrap items-center justify-center max-w-screen-lg m-auto">
+          {techSkills.map((ts, i) => (
+            <li
+              className="flex items-center font-bold text-xl m-4 text-gray-500 hover:scale-110 transition-transform"
+              key={`tech-skill-${i}`}
+            >
+              {ts.icon ? ts.icon : ""}
+              <span className="ml-2">{ts.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
