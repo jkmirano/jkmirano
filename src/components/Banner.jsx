@@ -1,9 +1,12 @@
 import React from "react";
-import ParticleBackground from "../components/ParticleBackground";
+import ParticleBackground from "./ParticleBackground";
 
 const Banner = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-animated">
+    <div
+      id="top"
+      className="min-h-screen flex items-center justify-center bg-animated"
+    >
       <ParticleBackground />
       <div className="text-white p-5">
         <h1 className="font-medium text-6xl lg:text-8xl mb-7">
