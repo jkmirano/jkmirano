@@ -1,5 +1,6 @@
 import React from "react";
 import ParticleBackground from "./ParticleBackground";
+import SmoothScrollButton from "./SmoothScrollButton";
 
 const Banner = () => {
   return (
@@ -21,12 +22,12 @@ const Banner = () => {
           <br />
           To know more details, click the button below!
         </p>
-        <a
-          className="bg-cyan-900 text-white py-2 px-4 rounded transition-colors hover:bg-cyan-700"
-          href="#about"
-        >
-          Know More!
-        </a>
+
+        <SmoothScrollButton
+          btnName="Know More!"
+          targetId="about"
+          cssClasses="bg-cyan-900 text-white py-2 px-4 rounded transition-colors hover:bg-cyan-700"
+        />
       </div>
     </div>
   );
