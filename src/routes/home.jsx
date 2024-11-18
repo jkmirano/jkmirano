@@ -1,8 +1,9 @@
 import React from "react";
-import Banner from "../components/Banner";
-import TechSkills from "../components/TechSkills";
-import About from "../components/About";
-import Header from "../components/layout/Header";
+import Header from "../components/layout/nav/Header";
+import Banner from "../components/layout/home/Banner";
+import About from "../components/layout/home/About";
+import TechSkills from "../components/layout/home/TechSkills";
+import Projects from "../components/layout/home/Projects";
 
 const home = () => {
   return (
@@ -14,6 +15,9 @@ const home = () => {
         <div className="relative z-10">
           <About />
           <TechSkills />
+
+          {/* @TODO Coming Soon */}
+          {/* <Projects /> */}
         </div>
       </div>
     </div>
