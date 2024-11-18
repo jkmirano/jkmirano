@@ -34,13 +34,14 @@ const NavList = ({ visibleDiv }) => {
         visibleDiv === "experience" ? "font-bold" : ""
       }`,
     },
-    {
-      name: "Contact",
-      targetId: "contact",
-      linkCssClasses: `transition-all text-cyan-900 ${
-        visibleDiv === "contact" ? "font-bold" : ""
-      }`,
-    },
+    // @TODO Decision if will still include in menu since its small section
+    // {
+    //   name: "Contact",
+    //   targetId: "contact",
+    //   linkCssClasses: `transition-all text-cyan-900 ${
+    //     visibleDiv === "contact" ? "font-bold" : ""
+    //   }`,
+    // },
   ];
 
   const burgerBtnClicked = useRecoilValue(burgerClicked);
