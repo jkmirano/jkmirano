@@ -4,6 +4,7 @@ import Banner from "../components/layout/home/Banner";
 import About from "../components/layout/home/About";
 import TechSkills from "../components/layout/home/TechSkills";
 import Projects from "../components/layout/home/Projects";
+import Experience from "../components/layout/home/Experience";
 
 const home = () => {
   return (
@@ -18,6 +19,8 @@ const home = () => {
 
           {/* @TODO Coming Soon */}
           {/* <Projects /> */}
+
+          <Experience />
         </div>
       </div>
     </div>

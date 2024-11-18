@@ -19,18 +19,19 @@ const NavList = ({ visibleDiv }) => {
         visibleDiv === "tech" ? "font-bold" : ""
       }`,
     },
+    // @TODO Coming Soon
+    // {
+    //   name: "Projects",
+    //   targetId: "projects",
+    //   linkCssClasses: `transition-all text-cyan-900 ${
+    //     visibleDiv === "projects" ? "font-bold" : ""
+    //   }`,
+    // },
     {
-      name: "Projects",
-      targetId: "projects",
+      name: "Experience",
+      targetId: "experience",
       linkCssClasses: `transition-all text-cyan-900 ${
-        visibleDiv === "projects" ? "font-bold" : ""
-      }`,
-    },
-    {
-      name: "Job History",
-      targetId: "jobHistory",
-      linkCssClasses: `transition-all text-cyan-900 ${
-        visibleDiv === "jobHistory" ? "font-bold" : ""
+        visibleDiv === "experience" ? "font-bold" : ""
       }`,
     },
     {
