@@ -19,27 +19,29 @@ const NavList = ({ visibleDiv }) => {
         visibleDiv === "tech" ? "font-bold" : ""
       }`,
     },
+    // @TODO Coming Soon
+    // {
+    //   name: "Projects",
+    //   targetId: "projects",
+    //   linkCssClasses: `transition-all text-cyan-900 ${
+    //     visibleDiv === "projects" ? "font-bold" : ""
+    //   }`,
+    // },
     {
-      name: "Projects",
-      targetId: "projects",
+      name: "Experience",
+      targetId: "experience",
       linkCssClasses: `transition-all text-cyan-900 ${
-        visibleDiv === "projects" ? "font-bold" : ""
+        visibleDiv === "experience" ? "font-bold" : ""
       }`,
     },
-    {
-      name: "Job History",
-      targetId: "jobHistory",
-      linkCssClasses: `transition-all text-cyan-900 ${
-        visibleDiv === "jobHistory" ? "font-bold" : ""
-      }`,
-    },
-    {
-      name: "Contact",
-      targetId: "contact",
-      linkCssClasses: `transition-all text-cyan-900 ${
-        visibleDiv === "contact" ? "font-bold" : ""
-      }`,
-    },
+    // @TODO Decision if will still include in menu since its small section
+    // {
+    //   name: "Contact",
+    //   targetId: "contact",
+    //   linkCssClasses: `transition-all text-cyan-900 ${
+    //     visibleDiv === "contact" ? "font-bold" : ""
+    //   }`,
+    // },
   ];
 
   const burgerBtnClicked = useRecoilValue(burgerClicked);
