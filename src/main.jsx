@@ -5,11 +5,16 @@ import "./index.css";
 
 // Routes
 import Home from "./routes/home";
+import Dashboard from "./routes/dashboard";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ]);
 
