@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/layout/nav/Header";
+import Header from "../components/layout/nav/user/Header";
 import Banner from "../components/layout/home/Banner";
 import About from "../components/layout/home/About";
 import TechSkills from "../components/layout/home/TechSkills";
