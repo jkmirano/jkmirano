@@ -1,14 +1,14 @@
 import React from "react";
 
-const NavList = ({ activePath = "overview" }) => {
+const NavList = ({ activePath = "home" }) => {
   const routes = [
-    {
-      path: "#",
-      pathName: "Overview",
-      cssClassNames: `transition-colors block px-4 py-2 hover:bg-cyan-600 hover:text-white ${
-        activePath === "overview" ? "bg-cyan-600 text-white" : ""
-      }`,
-    },
+    // {
+    //   path: "#",
+    //   pathName: "Overview",
+    //   cssClassNames: `transition-colors block px-4 py-2 hover:bg-cyan-600 hover:text-white ${
+    //     activePath === "overview" ? "bg-cyan-600 text-white" : ""
+    //   }`,
+    // },
     {
       path: "#",
       pathName: "Home",

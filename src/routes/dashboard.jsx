@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import NavMenu from "../components/layout/nav/admin/NavMenu";
 
 const dashboard = () => {
@@ -8,7 +9,9 @@ const dashboard = () => {
         cssClassNames={`font-montserrat bg-gray-200 min-h-screen basis-[200px]`}
       />
 
-      <main className="flex-1"></main>
+      <main className="flex-1">
+        <Outlet />
+      </main>
     </div>
   );
 };

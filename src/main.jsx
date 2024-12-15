@@ -6,6 +6,7 @@ import "./index.css";
 // Routes
 import Home from "./routes/home";
 import Dashboard from "./routes/dashboard";
+import AdminHome from "./components/layout/admin/AdminHome";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,12 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+    children: [
+      {
+        index: true,
+        element: <AdminHome />,
+      },
+    ],
   },
 ]);
 
