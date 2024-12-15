@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NavList from "./NavList";
 import BurgerBtn from "./BurgerBtn";
-import { RecoilRoot } from "recoil";
 import Logo from "../Logo";
 
 const Header = () => {
@@ -48,11 +47,9 @@ const Header = () => {
           navVisible ? "bg-white opacity-100" : "bg-transparent opacity-0"
         }`}
       >
-        <RecoilRoot>
-          <Logo />
-          <NavList visibleDiv={visibleDiv} />
-          <BurgerBtn />
-        </RecoilRoot>
+        <Logo />
+        <NavList visibleDiv={visibleDiv} />
+        <BurgerBtn />
       </header>
     </>
   );

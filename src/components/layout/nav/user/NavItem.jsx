@@ -1,13 +1,12 @@
 import React from "react";
 import SmoothScrollButton from "../../../SmoothScrollButton";
-import { useRecoilState } from "recoil";
-import { burgerClicked } from "./layoutAtoms";
+import { useBurgerState } from "../../../../state/hooks/useBurgerState";
 
 const NavItem = ({ navItemName, navTargetId, navItemLinkCssClasses }) => {
-  const [clicked, setClicked] = useRecoilState(burgerClicked);
+  const { setClick } = useBurgerState();
 
   return (
-    <span onClick={() => setClicked(false)}>
+    <span onClick={() => setClick(false)}>
       <SmoothScrollButton
         btnName={navItemName}
         targetId={navTargetId}

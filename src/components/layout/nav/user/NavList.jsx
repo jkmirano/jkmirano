@@ -1,7 +1,7 @@
 import React from "react";
 import NavItem from "./NavItem";
 import { useRecoilValue } from "recoil";
-import { burgerClicked } from "./layoutAtoms";
+import { isBurgerClickedSelector } from "../../../../state/selectors/burgerSelector";
 
 const NavList = ({ visibleDiv }) => {
   const navItems = [
@@ -44,7 +44,7 @@ const NavList = ({ visibleDiv }) => {
     // },
   ];
 
-  const burgerBtnClicked = useRecoilValue(burgerClicked);
+  const burgerBtnClicked = useRecoilValue(isBurgerClickedSelector);
 
   return (
     <nav>
