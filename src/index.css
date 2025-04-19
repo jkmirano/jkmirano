@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .bg-animated {
-  background: linear-gradient(270deg, #35d479, #1d9ad2);
+  background: linear-gradient(270deg, #3ea4d3, #1d9ad2);
   background-size: 400% 400%;
 
   -webkit-animation: AnimationName 30s ease infinite;

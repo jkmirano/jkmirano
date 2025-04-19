@@ -1,6 +1,6 @@
 import React from "react";
-import ParticleBackrgound from "../../ParticleBackground";
-import SmoothScrollButton from "../../SmoothScrollButton";
+import ParticleBackrgound from "../../utils/ParticleBackground";
+import SmoothScrollButton from "../../utils/SmoothScrollButton";
 
 const Banner = () => {
   return (

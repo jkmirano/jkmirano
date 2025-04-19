@@ -18,8 +18,8 @@ const About = () => {
         </div>
 
         <p className="font-normal text-xl text-cyan-900 flex-1 lg:text-left">
-          Highly experienced and versatile full-stack developer with 8 years of
-          frontend expertise in Angular, React and 3 years of backend in Node.js
+          Highly experienced and versatile full-stack developer with 9+ years of
+          frontend expertise in Angular, React and 4 years of backend in Node.js
           and Express.js with database management using MongoDB and MySQL.
           Proficient in cloud platform development on Amazon Web Services (AWS)
           DevOps. Proven track record of delivering scalable, efficient, and
