@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import NavList from "./NavList";
 import BurgerBtn from "./BurgerBtn";
 import { RecoilRoot } from "recoil";
-import Logo from "./Logo";
+import Logo from "../Logo";
 
 const Header = () => {
   const [visibleDiv, setVisibleDiv] = useState("");

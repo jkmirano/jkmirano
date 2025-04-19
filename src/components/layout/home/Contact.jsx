@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-teal-900 text-white py-16 px-5 font-montserrat text-center flex items-center flex-col"
+      className="bg-sky-500 text-white py-16 px-5 font-montserrat text-center flex items-center flex-col"
     >
       <h1 className="font-medium text-3xl mb-10">Get in Touch!</h1>
 
@@ -49,7 +49,7 @@ const Contact = () => {
       <p className="text-sm flex flex-wrap">
         <LuCopyright size={20} />
         <span className="ml-4">
-          2024 by John Kennith Mirano. All Rights Reserved.
+          2025 by John Kennith Mirano. All Rights Reserved.
         </span>
       </p>
     </div>

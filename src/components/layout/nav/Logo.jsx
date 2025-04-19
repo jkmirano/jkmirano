@@ -1,13 +1,24 @@
 import React from "react";
-import SmoothScrollButton from "../../SmoothScrollButton";
+import SmoothScrollButton from "../../utils/SmoothScrollButton";
 import { useRecoilState } from "recoil";
-import { burgerClicked } from "./layoutAtoms";
+import { burgerClicked } from "./user/layoutAtoms";
 
-const Logo = () => {
+const Logo = ({ smoothScroll = true, cssClassNames = "" }) => {
   const [burgerBtnClicked, setBurgerBtnClicked] = useRecoilState(burgerClicked);
 
+  const handleLogoClick = (event) => {
+    if (smoothScroll) {
+      setBurgerBtnClicked(false);
+    } else {
+      event.stopPropagation();
+    }
+  };
+
   return (
-    <span onClick={() => setBurgerBtnClicked(false)}>
+    <span
+      className={cssClassNames}
+      onClick={handleLogoClick}
+    >
       <SmoothScrollButton
         btnName="JKMirano"
         targetId="top"
