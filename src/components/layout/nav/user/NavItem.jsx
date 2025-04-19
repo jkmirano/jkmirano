@@ -1,5 +1,5 @@
 import React from "react";
-import SmoothScrollButton from "../../../SmoothScrollButton";
+import SmoothScrollButton from "../../../utils/SmoothScrollButton";
 import { useRecoilState } from "recoil";
 import { burgerClicked } from "./layoutAtoms";
 

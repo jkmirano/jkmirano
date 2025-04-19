@@ -52,7 +52,7 @@ const TechSkills = () => {
   return (
     <div
       id="tech"
-      className="bg-teal-100 min-h-screen"
+      className="bg-sky-200 min-h-screen"
     >
       <div className="py-24 px-5 max-w-7xl m-auto">
         <h2 className="font-bold text-3xl text-cyan-900 mb-12">
